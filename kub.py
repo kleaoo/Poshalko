@@ -1,4 +1,5 @@
 import random
+from PIL import Image
 
 def kubik():
     kubiki = int(input("количество куюиков которое вы хотите бросить: "))
@@ -8,5 +9,15 @@ def kubik():
         roll = random.randint(1, 6)
         rolls.append(roll)
 
-    print("результат:", rolls)
+    if kubiki == int('1488'):
+        print ('посхалочка')
+    elif kubiki == int('52'):
+        print('пиписят тваа')
+    elif kubiki == int('0'):
+        im = Image.open('sigma.png')
+        im.show()
+    else:
+        print("результат:", rolls)
+
+
 kubik()
