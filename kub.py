@@ -10,14 +10,18 @@ def kubik():
         rolls.append(roll)
 
     if kubiki == int('1488'):
-        print ('посхалочка')
+        jo = Image.open('joker.jpg')
+        jo.show()
     elif kubiki == int('52'):
         print('пиписят тваа')
     elif kubiki == int('0'):
-        im = Image.open('sigma.png')
-        im.show()
+        si = Image.open('sigma.jpg')
+        si.show()
+    elif kubiki == int('781'):
+        print('опа сво')
+    elif kubiki == int('1989'):
+        hm = Image.open('hm.jpg')
+        hm.show()
     else:
         print("результат:", rolls)
-
-
 kubik()
